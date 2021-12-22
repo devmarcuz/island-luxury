@@ -1,0 +1,147 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+.hero-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+  font-family: museo-sans-rounded, sans-serif;
+  font-style: normal;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+
+.hero-flex .rg-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero-flex .rg-content h1 {
+  width: 70%;
+  font-size: 40px;
+}
+
+.hero-flex .rg-content button {
+  margin-top: 80px;
+  background: var(--background-btn);
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  width: 40%;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hero-flex .lf-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-flex .lf-content .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: bree, sans-serif;
+}
+
+.hero-flex .lf-content .search input {
+  width: 60%;
+  padding: 8px;
+  padding-right: 20px;
+  font-size: 18px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+.hero-flex .lf-content .search .icon {
+  font-size: 20px;
+  z-index: 10;
+  transform: translateX(-150%);
+  color: #333;
+}
+
+@media screen and (max-width: 1180px) {
+  .hero-flex .rg-content h1 {
+    width: 100%;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .hero-flex .rg-content button {
+    width: 40%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .hero-flex .rg-content button {
+    width: 45%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .hero-flex .rg-content {
+    display: none;
+  }
+
+  .hero-flex .lf-content .search input {
+    width: 100%;
+    padding: 8px 15px;
+    padding-right: 20px;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-flex .lf-content .search input {
+    width: 100%;
+    padding: 15px 15px;
+    padding-right: 20px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  .hero-container {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero-container {
+    padding: 0 15px;
+  }
+
+  .hero-flex .lf-content .search input {
+    padding: 10px 15px;
+    padding-right: 20px;
+  }
+}

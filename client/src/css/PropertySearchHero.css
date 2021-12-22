@@ -1,0 +1,326 @@
+.property-search-hero {
+  background: #ffefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 60px;
+  color: #333;
+  position: relative;
+  font-family: freude, sans-serif;
+  font-style: normal;
+}
+
+.product-list-1 {
+  bottom: -18%;
+}
+
+.property-search-hero h1 {
+  font-size: 28px;
+  font-weight: 900;
+  padding: 40px 0;
+}
+
+.property-search-hero .form {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.property-search-hero .form .rw-1 {
+  display: flex;
+}
+
+.property-search-hero .form p {
+  font-size: 25px;
+  padding: 15px 25px;
+  padding-left: 35px;
+  padding-right: 40px;
+  background: var(--background-btn);
+  color: #fff;
+}
+
+.property-search-hero .form p:first-child {
+  background: #333;
+  border-top-left-radius: 5px;
+}
+
+.property-search-hero .form form {
+  background: #333;
+  padding-left: 25px;
+  position: relative;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+}
+
+.property-search-hero .form form .label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  position: relative;
+}
+
+.property-search-hero .form form .label input {
+  width: 35.5%;
+  padding: 9px 5px;
+  padding-left: 10px;
+  font-family: inherit;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: bree, sans-serif;
+}
+
+.property-search-hero .form form .flex .label .select {
+  width: 71%;
+  outline: none;
+  font-family: bree, sans-serif;
+}
+
+.property-search-hero .form form label {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  font-family: museo-sans-rounded, sans-serif;
+}
+
+.property-search-hero .form form .flex {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  padding-bottom: 15px;
+}
+
+.property-search-hero .form form img {
+  position: absolute;
+  right: 1%;
+  bottom: -22%;
+  width: 130px;
+  cursor: pointer;
+}
+
+.property-search-hero .social {
+  padding: 15px 0;
+  font-size: 27px;
+  text-align: center;
+  font-family: freude, sans-serif;
+}
+
+.property-search-hero .rvw {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  font-family: bree, sans-serif;
+}
+
+.property-search-hero .icons {
+  padding: 40px 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+.property-search-hero .icons a {
+  color: #333;
+  transition: 0.3s all ease-in-out;
+}
+
+.property-search-hero .icons a img {
+  width: 35px;
+}
+
+.property-search-hero .icons a:hover {
+  transform: scale(1.2);
+}
+
+.property-search-hero .head {
+  display: none;
+}
+
+.property-search-hero .form form .label .caret {
+  background: black;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  position: absolute;
+  right: 30%;
+  top: 52.5%;
+  pointer-events: none;
+}
+
+.property-search-hero .form form .label .caret .caret-icon {
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .property-search-hero {
+    padding: 0 40px;
+  }
+
+  .property-search-hero .form form img {
+    right: 1%;
+    bottom: -18%;
+    width: 110px;
+  }
+
+  .property-search-hero .icons {
+    margin-bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .property-search-hero .form form .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .property-search-hero .form form .label input {
+    width: 90%;
+  }
+
+  .property-search-hero .form form .flex .label .select {
+    width: 90%;
+  }
+
+  .property-search-hero .form form .label .caret {
+    right: 11%;
+    top: 53%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .property-search-hero h1 {
+    display: none;
+  }
+
+  .property-search-hero .head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .property-search-hero .head h3 {
+    width: 100%;
+    text-align: end;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .property-search-hero .head h3::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+    height: 15px;
+    border-radius: 10px;
+    width: 150px;
+    background: #789dc8;
+  }
+
+  .property-search-hero .form {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .property-search-hero .form form {
+    background: none;
+    padding: 0;
+  }
+
+  .property-search-hero .form .rw-1 {
+    display: none;
+  }
+
+  .property-search-hero .form form .label {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+  }
+
+  .property-search-hero .form form label {
+    color: #333;
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 5px;
+  }
+
+  .property-search-hero .form form .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .property-search-hero .form form .label input {
+    width: 90%;
+    padding: 10px 15px;
+    border: none;
+    font-size: 20px;
+  }
+
+  .property-search-hero .form form .flex .label .select {
+    width: 90%;
+    font-size: 19px;
+    outline: none;
+  }
+
+  .property-search-hero {
+    padding: 0 30px;
+  }
+
+  .property-search-hero .form form .img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .property-search-hero .form form img {
+    position: inherit;
+    width: 150px;
+    transform: translateY(20%);
+  }
+
+  .property-search-hero .social {
+    padding: 15px 0;
+    padding: 0;
+    font-size: 27px;
+  }
+
+  .property-search-hero .rvw {
+    display: none;
+  }
+
+  .property-search-hero .icons {
+    margin-bottom: 180px;
+  }
+
+  .property-search-hero .form form .label .caret {
+    right: 11.5%;
+    top: 62%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .property-search-hero {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 861px) {
+  .property-search-hero {
+    height: 140vh;
+  }
+}

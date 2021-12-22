@@ -1,0 +1,105 @@
+.selling-hero {
+  background: #0d4b54;
+  display: flex;
+  align-items: flex-start;
+  padding: 70px 60px;
+  color: #fff;
+  position: relative;
+  font-family: museo-sans-rounded, sans-serif;
+  font-style: normal;
+}
+
+.selling-hero .content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 45%;
+}
+
+.selling-hero .content h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.selling-hero .content p {
+  font-size: 22px;
+  color: rgb(255, 239, 239);
+  margin: 30px 0;
+}
+
+.selling-hero .content p span {
+  color: #fdeb48;
+  font-family: bree, sans-serif;
+}
+
+.selling-hero .content button {
+  border: none;
+  outline: none;
+  padding: 8px 18px;
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 3px;
+  cursor: pointer;
+  background: white;
+  font-family: inherit;
+}
+
+@media screen and (max-width: 920px) {
+  .selling-hero .content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .selling-hero .content {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .selling-hero .content p {
+    width: 70%;
+    text-align: center;
+  }
+
+  .selling-hero {
+    padding-bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .selling-hero {
+    padding: 70px 30px;
+    padding-bottom: 250px;
+  }
+
+  .selling-hero .content h1 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .selling-hero .content p {
+    width: 95%;
+    text-align: center;
+    line-height: 33px;
+  }
+
+  .selling-hero .content button {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .selling-hero {
+    padding: 40px 15px;
+    padding-bottom: 250px;
+  }
+}
+
+@media screen and (min-width: 861px) {
+  .selling-hero {
+    height: 90vh;
+  }
+}

@@ -1,0 +1,127 @@
+.footer {
+  background: #121212;
+  padding: 0 60px;
+  color: #fff;
+  overflow: hidden;
+  font-family: museo-sans-rounded, sans-serif;
+  font-style: normal;
+}
+
+.footer .upper {
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.footer .upper p {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 27px;
+  margin: auto;
+  width: 40%;
+}
+
+.footer .upper .hr {
+  background: rgba(255, 255, 255, 0.158);
+  width: 100%;
+  height: 1px;
+}
+
+.footer .lower {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .lower .details p {
+  font-size: 19px;
+  font-weight: 600;
+  padding: 7px 0;
+}
+
+.footer .lower .details p:first-child {
+  position: relative;
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.footer .lower .details p:first-child:before {
+  content: "";
+  position: absolute;
+  bottom: -1%;
+  height: 4px;
+  border-radius: 3px;
+  width: 40%;
+  background: #fdeea5;
+  transition: 0.3s all ease-in-out;
+}
+
+.footer .logo {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateX(1%);
+}
+
+.footer .logo p {
+  position: absolute;
+  left: 50%;
+  bottom: 45%;
+  transform: translate(-50%, -45%);
+  display: flex;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .upper p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer .upper p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .footer .lower {
+    margin-top: 60px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer .lower .details p:first-child:before {
+    bottom: 0%;
+    height: 3px;
+  }
+
+  .footer .details {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 0 30px;
+  }
+
+  .footer .upper p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 861px) {
+  .footer {
+    height: 85vh;
+  }
+}

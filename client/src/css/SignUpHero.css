@@ -1,0 +1,103 @@
+.signup-hero {
+  background: #ffefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+  color: #333;
+  font-family: bree, sans-serif;
+  font-style: normal;
+}
+
+.signup-hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.signup-hero-flex .rg-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.signup-hero-flex .rg-content p {
+  width: 80%;
+  font-size: 26px;
+}
+
+.signup-hero-flex .rg-content button {
+  margin-top: 100px;
+  background: var(--background-btn);
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  width: 40%;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.signup-hero-flex .lf-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-hero-flex .lf-content img {
+  width: 100%;
+  transform: translateY(10%);
+}
+
+@media screen and (max-width: 860px) {
+  .signup-hero-flex .rg-content button {
+    display: none;
+  }
+
+  .signup-hero-flex .lf-content {
+    display: none;
+  }
+
+  .signup-hero {
+    padding: 40px 60px;
+  }
+
+  .signup-hero-flex .rg-content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup-hero-flex .rg-content p {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signup-hero {
+    padding: 30px;
+  }
+
+  .signup-hero-flex .rg-content p {
+    width: 100%;
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .signup-hero {
+    padding: 30px 15px;
+  }
+}
+
+@media screen and (min-width: 861px) {
+  .signup-hero {
+    height: 80vh;
+  }
+}

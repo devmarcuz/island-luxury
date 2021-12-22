@@ -1,0 +1,107 @@
+GET  http://localhost:5000/api/users/userposttest
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "dev",
+    "email": "devmarcuz@gmail.com",
+    "password": "Hardemolar",
+    "isAdmin": "true"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "dev",
+    "password": "Hardemolar"
+}
+
+
+###
+
+GET http://localhost:5000/api/users/find/616e839526b2613008ac98b3
+Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmVjNGNlY2ZhYmE5MjMxY2NkOTcyOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDY0OTUyMiwiZXhwIjoxNjM0OTA4NzIyfQ.boernoDrCghFp3qipzRS2fqxXfJvERH3_5Zq36Jw-sk
+Content-Type: application/json
+
+{
+    "password": "Hardemolar",
+    "isAdmin": true
+}
+###
+
+GET http://localhost:5000/api/users?new=true
+Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmVjNGNlY2ZhYmE5MjMxY2NkOTcyOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDY0OTUyMiwiZXhwIjoxNjM0OTA4NzIyfQ.boernoDrCghFp3qipzRS2fqxXfJvERH3_5Zq36Jw-sk
+Content-Type: application/json
+###
+
+GET http://localhost:5000/api/users/stats
+Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmVjNGNlY2ZhYmE5MjMxY2NkOTcyOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDY0OTUyMiwiZXhwIjoxNjM0OTA4NzIyfQ.boernoDrCghFp3qipzRS2fqxXfJvERH3_5Zq36Jw-sk
+Content-Type: application/json
+
+###
+
+POST http://localhost:5000/api/products
+Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmVjNGNlY2ZhYmE5MjMxY2NkOTcyOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDY0OTUyMiwiZXhwIjoxNjM0OTA4NzIyfQ.boernoDrCghFp3qipzRS2fqxXfJvERH3_5Zq36Jw-sk
+Content-Type: application/json
+
+{
+    "title": "Nike Tshirt",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quia autem debitis voluptatibus voluptates nesciunt.",
+    "img": "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpg",
+    "categories": ["tshirt", "women", "men"],
+    "sizes": "XL M X",
+    "color":[ "white black yellow"],
+    "price": 99
+}
+
+###
+
+PUT http://localhost:5000/api/products/616fc46056f8e22aa05b17eb
+Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmVjNGNlY2ZhYmE5MjMxY2NkOTcyOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDY0OTUyMiwiZXhwIjoxNjM0OTA4NzIyfQ.boernoDrCghFp3qipzRS2fqxXfJvERH3_5Zq36Jw-sk
+Content-Type: application/json
+
+{
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quia autem debitis voluptatibus voluptates nesciunt.",
+    "img": "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpg",
+    "categories": ["shorts", "men"],
+    "sizes":["XL", "M", "X"],
+    "color":[ "white", "black", "yellow"]
+}
+
+###
+
+GET http://localhost:5000/api/products?category=women
+Content-Type: application/json
+
+###
+
+POST http://localhost:5000/api/orders
+Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmVjNGNlY2ZhYmE5MjMxY2NkOTcyOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDY0OTUyMiwiZXhwIjoxNjM0OTA4NzIyfQ.boernoDrCghFp3qipzRS2fqxXfJvERH3_5Zq36Jw-sk
+Content-Type: application/json
+
+{
+    "userId": "616e839526b2613008ac98b3",
+    "products": [
+        {
+            "productId": "12rhj3h",
+            "quantity": 2
+        },
+        {
+            "productId": "12rdae3h",
+            "quantity": 1
+        }
+    ],
+    "amount": 100,
+    "address":"USA"
+}
+
+###
+
+GET http://localhost:5000/api/orders/income
+Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmVjNGNlY2ZhYmE5MjMxY2NkOTcyOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDY0OTUyMiwiZXhwIjoxNjM0OTA4NzIyfQ.boernoDrCghFp3qipzRS2fqxXfJvERH3_5Zq36Jw-sk
