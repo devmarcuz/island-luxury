@@ -29,7 +29,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .nav .logo img {
@@ -38,7 +38,7 @@
   transform: translate(-15%, 10%);
   cursor: pointer; */
   width: 150px;
-  padding-top: 5px;
+  padding-top: 15px;
   object-fit: cover;
   cursor: pointer;
 }
@@ -144,6 +144,12 @@
 
   .nav .logo {
     flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav .logo .empty {
+    display: none;
   }
 
   .nav .display {

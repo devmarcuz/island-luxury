@@ -32,11 +32,11 @@ const ProductLister = ({ bottom, productBool }) => {
     });
 
     // Disable
-    window.oncontextmenu = (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      return false;
-    };
+    // window.oncontextmenu = (e) => {
+    //   e.preventDefault();
+    //   e.stopPropagation();
+    //   return false;
+    // };
   }, [slide]);
 
   function touchStart(e) {

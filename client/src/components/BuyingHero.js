@@ -21,7 +21,7 @@ const BuyingHero = () => {
           <button>RENT/LEASE</button>
         </div>
       </div>
-      <img src="/images/waves.svg" alt="" />
+      <img src="/images/rect.svg" alt="" />
     </div>
   );
 };

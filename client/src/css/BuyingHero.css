@@ -73,11 +73,11 @@
 .buying-hero img {
   display: none;
   position: absolute;
-  bottom: -5%;
+  bottom: 0%;
   left: 0;
   object-fit: cover;
   width: 100%;
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
   pointer-events: none;
 }
 

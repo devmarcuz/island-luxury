@@ -34,6 +34,7 @@ const Navbar = () => {
 
       <div className="logo">
         <img src="/images/island_logo.png" alt="" />
+        <div className="empty"></div>
       </div>
 
       <ul>
