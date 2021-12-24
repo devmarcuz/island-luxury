@@ -42,7 +42,7 @@
   border-radius: 3px;
   cursor: pointer;
   background: white;
-  font-family: inherit;
+  font-family: museo-sans-rounded, sans-serif;
 }
 
 @media screen and (max-width: 920px) {

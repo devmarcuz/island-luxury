@@ -45,6 +45,7 @@
   cursor: pointer;
   margin-top: 20px;
   background: white;
+  font-family: museo-sans-rounded, sans-serif;
 }
 
 @media screen and (max-width: 860px) {

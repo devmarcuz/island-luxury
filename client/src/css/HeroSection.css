@@ -50,6 +50,7 @@ video {
   font-size: 22px;
   font-weight: 700;
   border-radius: 3px;
+  font-family: museo-sans-rounded, sans-serif;
   cursor: pointer;
 }
 
