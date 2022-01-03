@@ -1,9 +1,16 @@
 import "../css/HeroSection.css";
-import { FaSearch } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function HeroSection() {
   const [searchVal, setSearchVal] = useState("");
+
+  useEffect(() => {
+    function playVideo() {
+      document.querySelector("video").play();
+    }
+    let myVid = document.querySelector("video");
+    myVid.oncanplay = playVideo();
+  });
 
   const handleChange = (e) => {
     setSearchVal(e.target.value);
@@ -30,7 +37,7 @@ function HeroSection() {
               placeholder="search for a seller buyer properties"
               id=""
             />
-            {!searchVal && <FaSearch className="icon" />}
+            <img src="/images/search.svg" alt="" className="icon" />
           </div>
         </div>
       </div>

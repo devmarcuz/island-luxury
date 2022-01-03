@@ -32,10 +32,10 @@ const Navbar = () => {
         <img src="/images/toggle.svg" alt="" />
       </div>
 
-      <div className="logo">
+      <Link to="/" className="logo">
         <img src="/images/island_logo.png" alt="" />
         <div className="empty"></div>
-      </div>
+      </Link>
 
       <ul>
         <li>
@@ -54,6 +54,7 @@ const Navbar = () => {
 
       <div className="btn">
         <button>SIGN UP</button>
+        {/* <img src="/images/signup_btn.svg" alt="" /> */}
       </div>
 
       <div className="display">

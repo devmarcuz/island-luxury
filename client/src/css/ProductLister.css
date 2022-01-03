@@ -1,26 +1,58 @@
 .product-lister {
-  transform: translateX(0%);
   font-family: museo-sans-rounded, sans-serif;
   font-style: normal;
   user-select: none;
-  transition: 0.3s transform ease-in-out;
+  transition: 0.3s all ease-in-out;
+  width: 100%;
 }
 
 .grabbing {
   cursor: grabbing;
 }
 
-.product-lister .title {
-  padding-bottom: 15px;
+.product-lister .main-lister {
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
-.product-lister .container {
+.product-lister .main-lister::-webkit-scrollbar {
+  display: none;
+}
+
+.product-lister .title {
+  padding-bottom: 15px;
+  transform: translateX(5%);
+}
+
+.product-lister .d-lister .container-lister {
   display: flex;
+  color: black;
+  border-radius: 10px;
+  background: white;
+}
+
+.product-lister .main-lister .d-lister {
+  transform: translateX(5%);
+  width: 100%;
+}
+
+.product-lister .main-lister .d-lister .container-lister .product-list {
   background: white;
   padding: 15px 10px;
   padding-bottom: 0;
-  color: black;
-  border-radius: 10px;
+  border: none;
+}
+
+.product-lister .main-lister .d-lister .container-lister .product-list:first-child {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.product-lister .main-lister .d-lister .container-lister .product-list:last-child {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-right: 0;
 }
 
 .product-lister .product-list .container {
@@ -99,5 +131,24 @@
 
   .product-lister .product-list .head-1 {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-lister .main-lister::-webkit-scrollbar {
+    display: inherit;
+    width: 12px;
+    height: 7px;
+  }
+
+  .product-lister .main-lister::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 50px;
+    cursor: grabbing;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .product-lister:hover .main-lister::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180);
   }
 }

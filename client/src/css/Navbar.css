@@ -81,6 +81,11 @@
   justify-content: center;
 }
 
+.nav .btn img {
+  width: 150px;
+  object-fit: contain;
+}
+
 .nav .btn button {
   background: var(--background-btn);
   border: none;

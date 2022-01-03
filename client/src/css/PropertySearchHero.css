@@ -18,10 +18,12 @@
   font-size: 28px;
   font-weight: 900;
   padding: 40px 0;
+  z-index: 4;
 }
 
 .property-search-hero .form {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 
@@ -30,12 +32,13 @@
 }
 
 .property-search-hero .form p {
-  font-size: 25px;
+  font-size: 30px;
   padding: 15px 25px;
   padding-left: 35px;
   padding-right: 40px;
   background: var(--background-btn);
   color: #fff;
+  font-family: bree, sans-serif;
 }
 
 .property-search-hero .form p:first-child {
@@ -49,6 +52,8 @@
   position: relative;
   border-radius: 5px;
   border-top-left-radius: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .property-search-hero .form form .label {
@@ -79,7 +84,7 @@
 .property-search-hero .form form label {
   color: white;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 900;
   padding-bottom: 8px;
   font-family: museo-sans-rounded, sans-serif;
 }
@@ -132,7 +137,7 @@
 }
 
 .property-search-hero .icons a:hover {
-  transform: scale(1.2);
+  transform: translateY(-5px) scale(1.2);
 }
 
 .property-search-hero .head {
@@ -163,6 +168,10 @@
     padding: 0 40px;
   }
 
+  .property-search-hero .form {
+    width: 90%;
+  }
+
   .property-search-hero .form form img {
     right: 1%;
     bottom: -18%;
@@ -174,7 +183,11 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
+  .property-search-hero .form {
+    width: 100%;
+  }
+
   .property-search-hero .form form .flex {
     display: flex;
     flex-direction: column;
@@ -300,7 +313,7 @@
   }
 
   .property-search-hero .rvw {
-    display: none;
+    padding-top: 15px;
   }
 
   .property-search-hero .icons {

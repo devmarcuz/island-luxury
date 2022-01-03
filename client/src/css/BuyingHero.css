@@ -5,7 +5,7 @@
   flex-direction: column;
   color: #fff;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: museo-sans-rounded, sans-serif;
   font-style: normal;
 }
@@ -74,7 +74,7 @@
 .buying-hero img {
   display: none;
   position: absolute;
-  bottom: 0%;
+  bottom: -1%;
   left: 0;
   object-fit: cover;
   width: 100%;

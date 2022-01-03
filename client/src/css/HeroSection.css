@@ -45,7 +45,7 @@ video {
   border: none;
   outline: none;
   padding: 8px 10px;
-  width: 40%;
+  width: 35%;
   color: white;
   font-size: 22px;
   font-weight: 700;
@@ -73,12 +73,19 @@ video {
 .hero-flex .lf-content .search input {
   width: 60%;
   padding: 8px;
-  padding-right: 20px;
+  padding-right: 34px;
   font-size: 18px;
   border-radius: 12px;
   outline: none;
   border: none;
   font-family: inherit;
+}
+
+.hero-flex .lf-content .search input::-webkit-search-cancel-button,
+.hero-flex .lf-content .search input::-webkit-search-decoration,
+.hero-flex .lf-content .search input::-webkit-search-results-button,
+.hero-flex .lf-content .search input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }
 
 .hero-flex .lf-content .search .icon {
@@ -92,6 +99,11 @@ video {
   .hero-flex .rg-content h1 {
     width: 100%;
     font-size: 40px;
+  }
+
+  .hero-flex .rg-content button {
+    width: 40%;
+    font-size: 22px;
   }
 }
 
@@ -117,7 +129,7 @@ video {
   .hero-flex .lf-content .search input {
     width: 100%;
     padding: 8px 15px;
-    padding-right: 20px;
+    padding-right: 34px;
     border-radius: 12px;
   }
 }
@@ -126,7 +138,7 @@ video {
   .hero-flex .lf-content .search input {
     width: 100%;
     padding: 15px 15px;
-    padding-right: 20px;
+    padding-right: 34px;
     border-radius: 12px;
     font-size: 16px;
   }
@@ -143,6 +155,6 @@ video {
 
   .hero-flex .lf-content .search input {
     padding: 10px 15px;
-    padding-right: 20px;
+    padding-right: 34px;
   }
 }

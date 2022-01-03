@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Footer.css";
 import { FaCopyright } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,14 +33,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="logo">
+      <Link to="/" className="logo">
         <img src="/images/island_logo.svg" alt="" />
 
         <p>
           <FaCopyright style={{ marginRight: "2px" }} />
           2021
         </p>
-      </div>
+      </Link>
     </div>
   );
 };
